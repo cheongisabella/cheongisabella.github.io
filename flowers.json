@@ -1,0 +1,27 @@
+[
+    {
+        "name": "peony",
+        "price": "1",
+        "image": "peony.jpg"
+    },
+    {
+        "name": "gerbera",
+        "price": 4,
+        "image": "gerbera.jpg"
+    }, 
+    {
+        "name": "baby breath",
+        "price": 3,
+        "image": "baby breath.jpg"
+    },
+    {
+        "name": "tulip",
+        "price": 5,
+        "image": "tulip.jpg"
+    },
+    {
+        "name": "sunflower",
+        "price": 2,
+        "image": "sunflower.jpg"
+    }
+]
