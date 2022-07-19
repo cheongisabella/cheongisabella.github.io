@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Nancy Florist</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            color: black;
+            font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Nancy Florist</h1>
+
+    <form>
+        <fieldset>
+            <h2>Order</h2>
+            <legend>Select the flowers you want to purchase</legend>
+            <p>
+                <input type="checkbox" id="peony" name="flower" value="peony" data-price="3">
+                <label for="peony">Peony</label>
+                <img src="images/peony.jpg" alt="pink peonies" height="100">
+                <br> Price: $3<br>
+                <label for="qty1">Quantity:</label>
+                <input type="number" id="qty1" name="quantity1" min="1" max="10">
+            </p>
+            <p>
+                <input type="checkbox" id="daisy" name="flower" value="daisy" data-price="5">
+                <label for="daisy">Daisy</label>
+                <img src="images/daisy.jpg" alt="white daisies" height="100">
+                <br>Price: $5<br>
+                <label for="qty2">Quantity:</label>
+                <input type="number" id="qty2" name="quantity2" min="1" max="10">
+            </p>
+            <p>
+                <input type="checkbox" id="rose" name="flower" value="rose" data-price="8">
+                <label for="rose">Rose</label>
+                <img src="images/rose.jpg" alt="box of red roses" height="100">
+                <br>Price: $8<br>
+                <label for="qty3">Quantity:</label>
+                <input type="number" id="qty3" name="quantity3" min="1" max="10">
+            </p>
+            <p>
+                <input type="checkbox" id="sweetPea" name="flower" value="sweetPea" data-price="6">
+                <label for="sweetPea">Sweet Pea</label>
+                <img src="images/sweet pea.jpg" alt="pink and purple sweet peas" height="100">
+                <br>Price: $6<br>
+                <label for="qty4">Quantity:</label>
+                <input type="number" id="qty4" name="quantity4" min="1" max="10">
+            </p>
+            <p>
+                <input type="checkbox" id="gerbera" name="flower" value="gerbera" data-price="4">
+                <label for="gerbera">Gerbera</label>
+                <img src="images/gerbera.jpg" alt="pink and yellow gerberas" height="100">
+                <br>Price: $4<br>
+                <label for="qty5">Quantity:</label>
+                <input type="number" id="qty5" name="quantity5" min="1" max="10">
+            </p>
+        </fieldset>
+        <fieldset>
+            <h2>Contact Details</h2>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required minlength="8" maxlength="8" pattern="[8|9][0-9]{7}">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required minlength="10">
+            </p>
+            <p>
+                <label for="deliveryDate">Date of Delivery:</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+            </p>
+            <p>
+                <label for="comment">Comments</label>
+                <textarea id="comment" name="comment"></textarea>
+            </p>
+        </fieldset>
+        <button type="button">Confirm</button>
+
+    </form>
+    <section></section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
